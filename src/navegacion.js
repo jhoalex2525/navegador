@@ -16,10 +16,21 @@ import PrestamoPantalla from "./pantalla/prestamo";
 const tab = createBottomTabNavigator();
 
 // Función para crear los botones de navegación
-function myTabs(){
+function MyTabs(){
     return(
         <tab.Navigator>
             <tab.Screen name="Inicio" component={InicioPantalla}></tab.Screen>
+            <tab.Screen name="Bombillo" component={BombilloPantalla}></tab.Screen>
+            <tab.Screen name="Prestamos" component={PrestamoPantalla}></tab.Screen>
         </tab.Navigator>
+    );
+}
+
+// Función para colocar los botones de navegacion en un contenedor
+export default function Navegacion(){
+    return(
+        <NavigationContainer>
+            <MyTabs></MyTabs>
+        </NavigationContainer>
     );
 }

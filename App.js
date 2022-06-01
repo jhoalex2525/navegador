@@ -17,10 +17,11 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Navegacion from './src/navegacion';
 
 const App = () => {
-  return(
-    <Text>Hola desde App</Text>
+  return(    
+    <Navegacion></Navegacion>    
   );
 }
 
